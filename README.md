@@ -315,3 +315,7 @@ See [CHANGELOG](CHANGELOG.md) for details.
 Copyright (c) 2016-2017 Matt Kruse
 
 MIT License, see [LICENSE](LICENSE.md) for details.
+
+# App URL
+
+https://myalexaservice.herokuapp.com/alexa/books
