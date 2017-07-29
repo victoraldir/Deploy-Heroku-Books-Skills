@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "alexa": {
-    "applicationId":"cross-var echo ${APP_ID}"
+    "applicationId":"process.env.APP_ID"
   },
   "dependencies": {
     "alexa-app": "^2.1.0",
