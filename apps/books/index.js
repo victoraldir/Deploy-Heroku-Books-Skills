@@ -12,14 +12,14 @@ var app = new alexa.app('books');
 // Goodreads API key.
 var key = process.env.API_KEY_GOODREADS;
 // Alexa Application Id.
-var applicationId = process.env.APP_ID;
+// var applicationId = process.env.APP_ID;
 
-app.pre = function (request, response, type) {
-if (request.sessionDetails.application.applicationId !== applicationId) {
-       // Invalid applicationId, prevent skill from responding.
-       response.fail('Invalid applicationId: '
-   + request.sessionDetails.application.applicationId);
-} };
+// app.pre = function (request, response, type) {
+// if (request.sessionDetails.application.applicationId !== applicationId) {
+//        // Invalid applicationId, prevent skill from responding.
+//        response.fail('Invalid applicationId: '
+//    + request.sessionDetails.application.applicationId);
+// } };
 
 // Helper method to call Goodreads API.
 function getBook(title) {
