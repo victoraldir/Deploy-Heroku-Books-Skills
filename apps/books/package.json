@@ -2,9 +2,6 @@
   "name": "books",
   "version": "1.0.0",
   "main": "index.js",
-  "alexa": {
-    "applicationId":"PLACE_VALID_APP_ID_HERE"
-  },
   "dependencies": {
     "alexa-app": "^2.1.0",
     "chatskills": "*",
