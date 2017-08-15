@@ -156,7 +156,7 @@ app.intent('getAuthor', {
     }
 );
 
-app.intent('whosCreator', {
+app.intent('getCreator', {
 	'slots': {},
 	'utterances': ["who's your creator"]
 	}, function(req,res) {
@@ -165,7 +165,7 @@ app.intent('whosCreator', {
 	}
 );
 
-app.intent('whosVictor', {
+app.intent('getVictor', {
 	'slots': {},
 	'utterances': ["who's victor"]
 	}, function(req,res) {
@@ -174,7 +174,7 @@ app.intent('whosVictor', {
 	}
 );
 
-app.intent('thanks', {
+app.intent('getThanks', {
 	'slots': {},
 	'utterances': ["{thanks|thank you}"]
 	}, function(req,res) {
