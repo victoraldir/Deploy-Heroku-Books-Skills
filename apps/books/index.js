@@ -156,33 +156,6 @@ app.intent('getAuthor', {
     }
 );
 
-app.intent('getCreator', {
-	'slots': {},
-	'utterances': ["who's your creator"]
-	}, function(req,res) {
-		var message = 'Victor created me as an example. Pretty cool, uh?';
-		res.say(message).shouldEndSession(false);
-	}
-);
-
-app.intent('getVictor', {
-	'slots': {},
-	'utterances': ["who's victor"]
-	}, function(req,res) {
-		var message = 'Victor is the cutest programmer ever. You can find him @ victoraldir anywhere';
-		res.say(message).shouldEndSession(false);
-	}
-);
-
-app.intent('getThanks', {
-	'slots': {},
-	'utterances': ["{thanks|thank you}"]
-	}, function(req,res) {
-		var message = 'You are welcome';
-		res.say(message).shouldEndSession(false);
-	}
-);
-
 
 app.intent('AMAZON.StopIntent', {
         'slots': {},
@@ -207,6 +180,24 @@ app.intent('AMAZON.HelpIntent', {
       message = 'I can tell you details about books from GoodReads. To find a book, just say get book, followed by the title. You can also ask who is the author or what is the rating.';
       res.say(message).shouldEndSession(false);
     }
+);
+
+app.intent('getCreator', {
+	'slots': {},
+	'utterances': ["creator"]
+	}, function(req,res) {
+		var message = 'Victor created me as an example. Pretty cool, uh?';
+		res.say(message).shouldEndSession(false);
+	}
+);
+
+app.intent('getVictor', {
+	'slots': {},
+	'utterances': ["victor"]
+	}, function(req,res) {
+		var message = 'Victor is the cutest programmer ever. You can find him @ victoraldir anywhere';
+		res.say(message).shouldEndSession(false);
+	}
 );
 
 module.exports = app;
