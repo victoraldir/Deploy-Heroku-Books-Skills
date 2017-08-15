@@ -156,6 +156,34 @@ app.intent('getAuthor', {
     }
 );
 
+app.intent('whosCreator', {
+	'slots': {},
+	'utterances': ["{whos|who's} your creator"]
+	}, function(req,res) {
+		var message = 'Victor created me as an example. Pretty cool, uh?';
+		res.say(message).shouldEndSession(false);
+	}
+);
+
+app.intent('whosVictor', {
+	'slots': {},
+	'utterances': ["{whos|who's} is Victor"]
+	}, function(req,res) {
+		var message = 'Victor is the cutest programmer ever. You can find him @ victoraldir anywhere';
+		res.say(message).shouldEndSession(false);
+	}
+);
+
+app.intent('thanks', {
+	'slots': {},
+	'utterances': ["{thanks|thank you}"]
+	}, function(req,res) {
+		var message = 'You are welcome';
+		res.say(message).shouldEndSession(false);
+	}
+);
+
+
 app.intent('AMAZON.StopIntent', {
         'slots': {},
         'utterances': ['{quit|exit|thanks|bye|thank you}']
