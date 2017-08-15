@@ -158,7 +158,7 @@ app.intent('getAuthor', {
 
 app.intent('whosCreator', {
 	'slots': {},
-	'utterances': ["{who is|who's} your creator"]
+	'utterances': ["who's your creator"]
 	}, function(req,res) {
 		var message = 'Victor created me as an example. Pretty cool, uh?';
 		res.say(message).shouldEndSession(false);
@@ -167,7 +167,7 @@ app.intent('whosCreator', {
 
 app.intent('whosVictor', {
 	'slots': {},
-	'utterances': ["{who is|who's} victor"]
+	'utterances': ["who's victor"]
 	}, function(req,res) {
 		var message = 'Victor is the cutest programmer ever. You can find him @ victoraldir anywhere';
 		res.say(message).shouldEndSession(false);
